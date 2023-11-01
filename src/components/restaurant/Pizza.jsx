@@ -30,12 +30,12 @@ export default function Pizza() {
     useEffect(() => {getTomato(); }, []);
     return (
         <>
-        <div className='pizza-section my-5'>
-            <h2 className='text-center  pb-4'> Pizza </h2>
+        <div className='pizza-section  my-5'>
+            <h2 className='text-center '> Pizza </h2>
         <div className='row'>
             {pizza.map((element) =>{
-                return <div className='col-md-3' key={element.recipe_id}>
-                    <h2 className='fs-5'>{element.title}</h2>
+                return <div className='col-md-3 mt-5' key={element.recipe_id}>
+                    <h2 className='fs-5 '>{element.title}</h2>
                     <img src ={element.image_url} alt="" className='img-fluid' />
                     
                 </div>
@@ -47,7 +47,7 @@ export default function Pizza() {
         <div className='row'>
             {carrot.map((Celement) =>{
                 return <div className='col-md-3' key={Celement.recipe_id}>
-                    <h2 className='fs-5'>{Celement.title}</h2>
+                    <h2 className='fs-5 mt-5'>{Celement.title}</h2>
                     <img src ={Celement.image_url} alt="" className='img-fluid' />
                     
                 </div>
@@ -58,8 +58,8 @@ export default function Pizza() {
         <h2 className='text-center  pb-4'> Tomato</h2>
         <div className='row'>
             {carrot.map((Telement) =>{
-                return <div className='col-md-3' key={Telement.recipe_id}>
-                    <h2 className='fs-5'>{Telement.title}</h2>
+                return <div className='col-md-3 mt-5' key={Telement.recipe_id}>
+                    <h2 className='fs-5 '>{Telement.title}</h2>
                     <img src ={Telement.image_url} alt="" className='img-fluid' />
                     
                 </div>
